@@ -10,6 +10,10 @@ class DataManager{
   Future<SharedPreferences> sharedPreferences = SharedPreferences.getInstance();
   List<PostModel> a = new List();
 
+  List<String> subjects = ['-','국어', "영어", '수학', '제2외국어'];
+  List<String> term = ['-','1', "2", '3', "other"];
+  List<String> grade = ['-','1', "2", '3', 'other'];
+
 
   DataManager instance() => _DataManager;
 
@@ -67,6 +71,8 @@ class DataManager{
       a = jsonDecode(v.getString(POSTKEY));
     });
   }
+
+
 
 
   factory DataManager() {

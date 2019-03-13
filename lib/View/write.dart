@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:thak/Manager/DataManager.dart';
 import 'package:thak/Model/PostModel.dart';
 import 'package:thak/Model/TypeModel.dart';
+import 'package:thak/View/info.dart';
 import 'package:thak/View/select.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -159,6 +160,12 @@ class _WritePageState extends State<WritePage> {
     // Navigator.push returns a Future that will complete after we call
     // Navigator.pop on the Selection Screen!
     if(index == 0){
+      List<int> result = await Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => new InfoPage())
+      );
+      setState(() {
+      });
 
     }else {
       List<int> result = await Navigator.push(

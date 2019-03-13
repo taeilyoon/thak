@@ -77,7 +77,7 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
       body: Container(
         child: Column(
           children: <Widget>[
-            BuildList(),
+//            BuildList(),
 
           ],
         ),
@@ -170,5 +170,6 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
 
   BuildList() {
 
+//    return
   }
 }
